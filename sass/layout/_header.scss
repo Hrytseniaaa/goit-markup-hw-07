@@ -1,0 +1,95 @@
+.container-header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+
+}
+
+header {
+    background: #FFFFFF;
+    border-bottom: 1px solid #ECECEC;
+}
+
+
+
+/* site naw */
+
+
+.nav-item:not(:last-child),
+.connection-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+
+
+
+.site-nav .link {
+    color: var(--section-title-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--accent-color);
+}
+
+.site-link .link,
+.site-nav .link {
+    display: inline-block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+
+
+/* посилання у шапці  */
+
+.connection-icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+
+.site-link .link {
+    color: var(--primary-text-color);
+    display: flex;
+    align-items: center;
+}
+
+
+
+.connection-item .link {
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+
+.connection-item .link:hover,
+.connection-item .link:focus {
+    color: var(--accent-color);
+}
+
+.site-link {
+    align-items: center;
+    margin-left: auto;
+
+}
+
+/* спільне для усіх посилань шапки */
+.site-link,
+.site-nav {
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    display: flex;
+
+
+}

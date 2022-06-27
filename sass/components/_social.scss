@@ -1,0 +1,38 @@
+
+
+.master-soc {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--icon-silver--);
+    transition-property: background-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+
+.co-worker-soc-icon {
+    fill: currentColor;
+}
+
+.master-soc:hover,
+.master-soc:focus {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+}
+
+
+
+.co-worker-soc-list {
+    display: flex;
+    justify-content: center;
+
+}
+
+.co-worker-soc-item:not(:last-child) {
+    margin-right: 10px;
+}

@@ -1,6 +1,6 @@
 
 
-.master-soc {
+.soc-list__master {
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -15,35 +15,27 @@
 }
 
 
-.co-worker-soc-icon {
+.soc-list__icon {
     fill: currentColor;
 }
 
 
 
-.master-soc:hover,
-.master-soc:focus {
+.soc-list__master:hover,
+.soc-list__master:focus {
     background-color: var(--accent-color);
     color: var(--white-color);
 }
 
 
 
-.co-worker-soc-list {
+.soc-list {
     display: flex;
     justify-content: center;
 
 }
 
-.co-worker-soc-item:not(:last-child) {
+.soc-list__item:not(:last-child) {
     margin-right: 10px;
 }
 
-.footer .master-soc {
-    color: var(--white-color);
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-.footer-soc:hover {
-background-color: var(--accent-color);
-}

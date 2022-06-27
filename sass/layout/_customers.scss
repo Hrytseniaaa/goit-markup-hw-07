@@ -13,14 +13,14 @@
 
 
 
-.customer-link:hover,
-.customer-link:focus {
+.customer__link:hover,
+.customer__link:focus {
     color: var(--accent-color);
     border-color: var(--accent-color);
 
 }
 
-.customer-link {
+.customer__link {
     width: 100%;
     height: 92px;
     border: 1px solid #AFB1B8;
@@ -43,7 +43,7 @@
 
 }
 
-.customer-icon {
+.customer__icon {
 
     position: absolute;
     fill: currentColor;

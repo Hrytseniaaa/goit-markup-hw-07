@@ -11,7 +11,12 @@
     transition-property: background-color, color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
+    
+    &:hover,
+    &:focus {
+            background-color: var(--accent-color);
+            color: var(--white-color);
+        }
 }
 
 
@@ -21,21 +26,16 @@
 
 
 
-.soc-list__master:hover,
-.soc-list__master:focus {
-    background-color: var(--accent-color);
-    color: var(--white-color);
-}
-
 
 
 .soc-list {
     display: flex;
     justify-content: center;
 
-}
-
-.soc-list__item:not(:last-child) {
+    &__item:not(:last-child) {
     margin-right: 10px;
 }
+}
+
+
 

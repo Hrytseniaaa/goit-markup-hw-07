@@ -13,7 +13,42 @@ header {
 
 
 /* site naw */
+.site-nav .current {
+    color: var(--accent-color);
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-bottom: -1px;
+}
 
+.second-current {
+    width: 78px;
+    margin-top: 32px;
+
+    &::after {
+        content: '';
+        height: 4px;
+        display: block;
+        border-radius: 2px;
+        background-color: var(--accent-color);
+        margin-top: 28px;
+
+    }
+}
+
+.first-current {
+    width: 49px;
+    margin-top: 32px;
+
+    &::after {
+        content: '';
+        height: 4px;
+        display: block;
+        border-radius: 2px;
+        background-color: var(--accent-color);
+        margin-top: 28px;
+
+    }
+}
 
 .nav-item:not(:last-child),
 .connection-item:not(:last-child) {
@@ -28,14 +63,16 @@ header {
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+            color: var(--accent-color);
+        }
 }
 
 
 
-.site-nav .link:hover,
-.site-nav .link:focus {
-    color: var(--accent-color);
-}
+
 
 .site-link .link,
 .site-nav .link {

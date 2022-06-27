@@ -1,11 +1,3 @@
-.footer-containers {
-    display: flex;
-    align-items: baseline;
-}
-
-
-
-
 .footer {
     background: #2F303A;
     padding-top: 60px;
@@ -13,11 +5,10 @@
 }
 
 
-.footer .master-soc {
-    color: var(--white-color);
-    background-color: rgba(255, 255, 255, 0.1);
+.footer-containers {
+    display: flex;
+    align-items: baseline;
 }
-
 
 
 
@@ -30,9 +21,7 @@
 
 
 .list .kuyiv-address {
-    font-style: normal;
     color: var(--white-color);
-    font-style: normal;
 }
 
 
@@ -43,9 +32,15 @@
 }
 
 
-.address-link .link,
+
 .address {
     font-size: 14px;
+}
+
+
+.footer-soc-master {
+    color: var(--white-color);
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 
@@ -72,10 +67,6 @@
 }
 
 
-.footer-submit-button:hover,
-.footer-submit-button:focus {
-    background-color: var(--button-hover--);
-}
 
 .submit-icon {
     margin-left: 10px;
@@ -95,11 +86,5 @@
     margin-left: auto;
 }
 
-.footer .master-soc {
-    color: var(--white-color);
-    background-color: rgba(255, 255, 255, 0.1);
-}
 
-.footer-soc:hover {
-    background-color: var(--accent-color);
-}
+

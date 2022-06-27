@@ -13,12 +13,11 @@
 
 
 
-.hero-title {
-    color: var(--white-color);
+.hero-title{
     letter-spacing: 0.06em;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    color: var(--white-color);
+    @include font (900, 44px, 1.36);
+    
     margin: 0 auto;
     margin-bottom: 30px;
 

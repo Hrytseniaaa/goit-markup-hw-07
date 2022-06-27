@@ -1,6 +1,5 @@
 .title {
     color: var(--section-title-color);
-    ;
 
 }
 
@@ -14,29 +13,20 @@
 
 
 .section-title {
-    height: 42px;
+    @include font(700, 36px, 1.16);
+
     margin-bottom: 50px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
+   
     text-align: center;
 
     color: var(--section-title-color)
 }
 
 .footer-titles {
+    @include font(700, 14px, 1.14);
     margin-bottom: 20px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
     text-align: left;
     text-transform: uppercase;
     display: block;
     color: var(--white-color);
 }
-
- .hero-title {
-     color: var(--white-color);
-     letter-spacing: 0.06em;
-
- }

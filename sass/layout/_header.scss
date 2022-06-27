@@ -1,15 +1,14 @@
+header {
+    background: #FFFFFF;
+    border-bottom: 1px solid #ECECEC;
+}
+
 .container-header {
     height: 80px;
     display: flex;
     align-items: center;
 
 }
-
-header {
-    background: #FFFFFF;
-    border-bottom: 1px solid #ECECEC;
-}
-
 
 
 /* site naw */
@@ -104,13 +103,14 @@ header {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+    &:hover,
+    &:focus {
+            color: var(--accent-color);
+        }
 }
 
 
-.connection-item .link:hover,
-.connection-item .link:focus {
-    color: var(--accent-color);
-}
+
 
 .site-link {
     align-items: center;
@@ -122,9 +122,7 @@ header {
 .site-link,
 .site-nav {
     align-items: center;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    @include font (500, 14px, 1.14);
     letter-spacing: 0.02em;
     display: flex;
 

@@ -1,3 +1,8 @@
+.team {
+    background: #F5F4FA;
+
+}
+
 .co-worker {
     width: 270px;
     background-color: var(--white-color);
@@ -14,23 +19,17 @@
     padding: 30px;
 }
 
-.team {
-    background: #F5F4FA;
 
-}
 
 .co-worker__title {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.17;
+    @include font (500, 16px, 1.17);
     margin-bottom: 10px;
     text-align: center;
 
 }
 
 .co-worker__position {
-    font-size: 16px;
-    line-height: 1.17;
+    @include font (null, 16px, 1.17);
     margin-bottom: 16px;
     text-align: center;
 

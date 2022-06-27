@@ -34,7 +34,8 @@
 
 
 .address {
-    font-size: 14px;
+    @include font (null, 14px, 1.71);
+
 }
 
 

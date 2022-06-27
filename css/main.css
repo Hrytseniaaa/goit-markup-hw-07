@@ -88,33 +88,30 @@ img {
 }
 
 .section-title {
-  height: 42px;
-  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
+  margin-bottom: 50px;
   text-align: center;
   color: var(--section-title-color);
 }
 
 .footer-titles {
-  margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  margin-bottom: 20px;
   text-align: left;
   text-transform: uppercase;
   display: block;
   color: var(--white-color);
 }
 
-.hero-title {
-  color: var(--white-color);
-  letter-spacing: 0.06em;
-}
-
 .logo {
   font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -154,15 +151,19 @@ header .logo {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
   letter-spacing: 0.06em;
   cursor: pointer;
-  transition-property: background-color;
+  transition-property: background-color box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn:hover, .btn:focus {
   background-color: var(--button-hover--);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .container {
@@ -209,15 +210,15 @@ header .logo {
   margin-right: 10px;
 }
 
+header {
+  background: #FFFFFF;
+  border-bottom: 1px solid #ECECEC;
+}
+
 .container-header {
   height: 80px;
   display: flex;
   align-items: center;
-}
-
-header {
-  background: #FFFFFF;
-  border-bottom: 1px solid #ECECEC;
 }
 
 /* site naw */
@@ -297,8 +298,7 @@ header {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.connection-item .link:hover,
-.connection-item .link:focus {
+.connection-item .link:hover, .connection-item .link:focus {
   color: var(--accent-color);
 }
 
@@ -329,8 +329,8 @@ header {
 }
 
 .hero-title {
-  color: var(--white-color);
   letter-spacing: 0.06em;
+  color: var(--white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -352,10 +352,10 @@ header {
 }
 
 .preferences-title {
-  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  margin-bottom: 10px;
   color: var(--section-title-color);
 }
 
@@ -378,6 +378,10 @@ header {
   position: relative;
 }
 
+.works-foto:not(:last-child) {
+  margin-right: 30px;
+}
+
 .works-text {
   width: 100%;
   position: absolute;
@@ -397,12 +401,12 @@ header {
   display: flex;
 }
 
-.works-foto:not(:last-child) {
-  margin-right: 30px;
-}
-
 .works-title {
   width: 376;
+}
+
+.team {
+  background: #F5F4FA;
 }
 
 .co-worker {
@@ -416,10 +420,6 @@ header {
 
 .co-worker__info {
   padding: 30px;
-}
-
-.team {
-  background: #F5F4FA;
 }
 
 .co-worker__title {
@@ -497,6 +497,7 @@ header {
 
 .address {
   font-size: 14px;
+  line-height: 1.71;
 }
 
 .footer-soc-master {
@@ -615,6 +616,13 @@ header {
   border-color: var(--accent-color);
 }
 
+.modal-comment::placeholder {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
 .modal-checkbox {
   margin-bottom: 30px;
 }
@@ -626,9 +634,9 @@ header {
 }
 
 .modal-check-text {
+  color: var(--primary-text-color);
   font-size: 14px;
   line-height: 1.71;
-  color: var(--primary-text-color);
   letter-spacing: 0.03em;
   display: flex;
   align-items: center;
@@ -665,18 +673,6 @@ header {
   color: var(--accent-color);
 }
 
-.modal-comment::placeholder {
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
-
-.modal-button:hover,
-.modal-button:focus {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-
 .backdrop {
   top: 0;
   left: 0;
@@ -701,8 +697,6 @@ header {
   background-color: var(--white-color);
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0px 2px 1px 0px #00000033;
-  box-shadow: 0px 1px 1px 0px #00000024;
   box-shadow: 0px 1px 3px 0px #0000001F;
 }
 
@@ -719,14 +713,10 @@ header {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-}
-
-.close-svg {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-svg:hover,
-.close-svg:focus {
+.close-button:hover, .close-button:focus {
   fill: var(--accent-color);
 }
 

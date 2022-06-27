@@ -1,5 +1,9 @@
 .works-foto {
     position: relative;
+
+    &:not(:last-child) {
+            margin-right: 30px;
+        }
 }
 
 
@@ -9,12 +13,9 @@
     bottom: 0;
     padding-bottom: 27px;
     padding-top: 27px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
+    @include font (700, 14px, 1.14);
     text-align: center;
     text-transform: uppercase;
-
     color: #FFFFFF;
     background: rgba(47, 48, 58, 0.8);
 }
@@ -25,10 +26,6 @@
 
 }
 
-.works-foto:not(:last-child) {
-    margin-right: 30px;
-
-}
 
 .works-title {
     width: 376;

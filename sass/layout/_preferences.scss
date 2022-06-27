@@ -8,25 +8,19 @@
 
 .section-preferences {
     padding-bottom: 0;
-
-
 }
 
 
 
 .preferences-title {
-
+    @include font (700, 14px, 1.14);
     margin-bottom: 10px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
     color: var(--section-title-color)
 }
 
 .preferences-text {
+    @include font (null, 14px, 1.71);
 
-    font-size: 14px;
-    line-height: 1.71;
 }
 
 .pref-img {

@@ -19,6 +19,8 @@
     fill: currentColor;
 }
 
+
+
 .master-soc:hover,
 .master-soc:focus {
     background-color: var(--accent-color);
@@ -35,4 +37,13 @@
 
 .co-worker-soc-item:not(:last-child) {
     margin-right: 10px;
+}
+
+.footer .master-soc {
+    color: var(--white-color);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-soc:hover {
+background-color: var(--accent-color);
 }

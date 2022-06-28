@@ -12,12 +12,7 @@ header {
 
 
 /* site naw */
-.site-nav .current {
-    color: var(--accent-color);
-    padding-bottom: 0;
-    padding-top: 0;
-    margin-bottom: -1px;
-}
+
 
 .second-current {
     width: 78px;
@@ -37,7 +32,6 @@ header {
 .first-current {
     width: 49px;
     margin-top: 32px;
-
     &::after {
         content: '';
         height: 4px;
@@ -69,7 +63,12 @@ header {
         }
 }
 
-
+.site-nav .current {
+    color: var(--accent-color);
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-bottom: -1px;
+}
 
 
 

@@ -6,10 +6,7 @@
     --white-color: #ffffff;
     --fotter-link: rgba(255, 255, 255, 0.6);
     --button-hover--: #188CE8;
-}
 
-@mixin font($fw, $fs, $fh) {
-    font-weight: $fw;
-    font-size: $fs;
-    line-height: $fh;
+    --font-roboto--: font-family: 'Roboto', sans-serif;
+    --font-Raleway--: font-family: 'Raleway', sans-serif;
 }
